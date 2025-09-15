@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FurniCraft</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-white shadow-sm">
+    <h1 class="text-xl font-bold">FurniCraft</h1>
+    <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
+      <li><a href="#" class="hover:text-black">Living Room</a></li>
+      <li><a href="#" class="hover:text-black">Bedroom</a></li>
+      <li><a href="#" class="hover:text-black">Dining Room</a></li>
+      <li><a href="#" class="hover:text-black">Office</a></li>
+      <li><a href="#" class="hover:text-black">Storage</a></li>
+    </ul>
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">☰</button>
+  </nav>
+
+  <!-- Overlay -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-40 hidden"></div>
+
+  <!-- Mobile Menu (Slide-in) -->
+  <div id="mobile-menu" class="fixed top-0 right-0 h-full w-72 bg-white shadow-xl transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+    <!-- Header -->
+    <div class="flex justify-between items-center px-6 py-4 border-b">
+      <h2 class="text-lg font-semibold">Menu</h2>
+      <button id="close-btn" class="text-2xl">✕</button>
+    </div>
+
+    <!-- Links -->
+    <div class="flex flex-col space-y-6 px-6 py-6 text-lg font-medium">
+      <a href="#" class="hover:text-indigo-600 transition">Living Room</a>
+      <a href="#" class="hover:text-indigo-600 transition">Bedroom</a>
+      <a href="#" class="hover:text-indigo-600 transition">Dining Room</a>
+      <a href="#" class="hover:text-indigo-600 transition">Office</a>
+      <a href="#" class="hover:text-indigo-600 transition">Storage</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="px-6 lg:px-16 py-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    <!-- Left Content -->
+    <div>
+      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Transform Your <br> Living Space</h2>
+      <p class="text-gray-600 mb-6 max-w-lg">Discover premium furniture that combines exceptional design with unmatched comfort. Create the home you've always dreamed of with our curated collection.</p>
+     <!-- Buttons -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 w-full max-w-md mx-auto md:mx-0">
+<a href="#" class="w-full px-6 py-3 bg-black text-white font-medium rounded-lg hover:bg-gray-800 text-center">Explore Collection</a>
+<a href="#" class="w-full px-6 py-3 border border-gray-300 font-medium rounded-lg hover:bg-gray-100 text-center">Design Consultation</a>
+</div>
+      <div class="flex space-x-8 text-center">
+        <div>
+          <h3 class="text-xl font-bold text-gray-900">500+</h3>
+          <p class="text-gray-500 text-sm">Premium Products</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-gray-900">10K+</h3>
+          <p class="text-gray-500 text-sm">Happy Customers</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-gray-900">15+</h3>
+          <p class="text-gray-500 text-sm">Years Experience</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+   <div class="relative order-1 lg:order-2">
+<img src="https://images.unsplash.com/photo-1662059360215-f727513c534b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBmdXJuaXR1cmUlMjBsaXZpbmclMjByb29tJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MXx8fHwxNzU2NzE1MDk2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+alt="Living Room"
+class="rounded-2xl shadow-lg w-full h-[550px] object-cover">
+<!-- Free Delivery Badge -->
+<div class="absolute -bottom-4 -left-4 bg-white shadow-md rounded-lg px-6 py-4 flex items-center space-x-2">
+<span class="w-3 h-3 bg-green-500 rounded-full"></span>
+<p class="text-sm text-gray-700 font-medium">Free Delivery <br><span class="text-gray-500 text-xs">On orders above ₹25,000</span></p>
+</div>
+</div>
+  </section>
+
+
+  <!-- Card Section -->
+  <section class="bg-gray-50 font-sans px-6 lg:px-16 md:py-20 py-10">
+  <div class="text-center mb-10">
+    <h2 class="text-3xl font-bold text-gray-900 mb-4">Shop by Category</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      Discover furniture for every room in your home. From cozy living spaces to productive work areas.
+    </p>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Card -->
+    <div class="relative rounded-xl overflow-hidden shadow-md transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80"
+        class="w-full h-60 object-cover transition duration-300 hover:brightness-110" alt="Living Room">
+      <div class="absolute bottom-4 left-4 text-white">
+        <h3 class="text-lg font-bold">Living Room</h3>
+        <p class="text-sm">120+ Items</p>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="relative rounded-xl overflow-hidden shadow-md transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
+        class="w-full h-60 object-cover transition duration-300 hover:brightness-110" alt="Dining Room">
+      <div class="absolute bottom-4 left-4 text-white">
+        <h3 class="text-lg font-bold">Dining Room</h3>
+        <p class="text-sm">85+ Items</p>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="relative rounded-xl overflow-hidden shadow-md transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?auto=format&fit=crop&w=800&q=80"
+        class="w-full h-60 object-cover transition duration-300 hover:brightness-110" alt="Office">
+      <div class="absolute bottom-4 left-4 text-white">
+        <h3 class="text-lg font-bold">Office</h3>
+        <p class="text-sm">65+ Items</p>
+      </div>
+    </div>
+
+    <!-- Dummy Card -->
+    <div class="relative rounded-xl overflow-hidden shadow-md transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <img src="https://picsum.photos/800/600?random=2"
+        class="w-full h-60 object-cover transition duration-300 hover:brightness-110" alt="Dummy Category 2">
+      <div class="absolute bottom-4 left-4 text-white">
+        <h3 class="text-lg font-bold">Kids Room</h3>
+        <p class="text-sm">40+ Items</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Collections -->
+ <section class="bg-gray-50 font-sans px-6 lg:px-16 md:py-20 py-10">
+  <div class="text-center mb-10">
+    <h2 class="text-3xl font-bold text-gray-900 mb-4">Featured Collection</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      Handpicked furniture pieces that blend style, comfort, and functionality for your modern home.
+    </p>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Card 1 -->
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div class="relative overflow-hidden">
+        <img src="https://picsum.photos/600/400?random=1" alt="Sofa" class="w-full h-80 object-cover transition duration-500 hover:scale-105">
+        <span class="absolute top-3 left-3 bg-indigo-700 text-white text-xs font-semibold px-2 py-1 rounded-lg">New</span>
+        <span class="absolute top-3 left-16 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-18%</span>
+      </div>
+      <div class="p-5">
+        <p class="text-gray-500 text-sm">Living Room</p>
+        <h3 class="font-semibold text-lg">Modern 3-Seater Sofa</h3>
+        <div class="mt-2 flex items-center gap-2">
+          <span class="text-xl font-bold text-gray-900">₹45,000</span>
+          <span class="text-sm line-through text-gray-500">₹55,000</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div class="relative overflow-hidden">
+        <img src="https://picsum.photos/600/400?random=2" alt="Dining Table" class="w-full h-80 object-cover transition duration-500 hover:scale-105">
+        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-15%</span>
+      </div>
+      <div class="p-5">
+        <p class="text-gray-500 text-sm">Dining Room</p>
+        <h3 class="font-semibold text-lg">Oak Dining Table Set</h3>
+        <div class="mt-2 flex items-center gap-2">
+          <span class="text-xl font-bold text-gray-900">₹38,000</span>
+          <span class="text-sm line-through text-gray-500">₹45,000</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div class="relative overflow-hidden">
+        <img src="https://picsum.photos/600/400?random=3" alt="Bed Frame" class="w-full h-80 object-cover transition duration-500 hover:scale-105">
+        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-20%</span>
+      </div>
+      <div class="p-5">
+        <p class="text-gray-500 text-sm">Bedroom</p>
+        <h3 class="font-semibold text-lg">Platform Bed Frame</h3>
+        <div class="mt-2 flex items-center gap-2">
+          <span class="text-xl font-bold text-gray-900">₹28,000</span>
+          <span class="text-sm line-through text-gray-500">₹35,000</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div class="relative overflow-hidden">
+        <img src="https://picsum.photos/600/400?random=4" alt="Office Desk" class="w-full h-80 object-cover transition duration-500 hover:scale-105">
+        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-12%</span>
+      </div>
+      <div class="p-5">
+        <p class="text-gray-500 text-sm">Office</p>
+        <h3 class="font-semibold text-lg">Ergonomic Office Desk</h3>
+        <div class="mt-2 flex items-center gap-2">
+          <span class="text-xl font-bold text-gray-900">₹22,000</span>
+          <span class="text-sm line-through text-gray-500">₹25,000</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div class="relative overflow-hidden">
+        <img src="https://picsum.photos/600/400?random=5" alt="Bookshelf" class="w-full h-80 object-cover transition duration-500 hover:scale-105">
+        <span class="absolute top-3 left-3 bg-indigo-700 text-white text-xs font-semibold px-2 py-1 rounded-lg">New</span>
+      </div>
+      <div class="p-5">
+        <p class="text-gray-500 text-sm">Study</p>
+        <h3 class="font-semibold text-lg">Wooden Bookshelf</h3>
+        <div class="mt-2 flex items-center gap-2">
+          <span class="text-xl font-bold text-gray-900">₹15,000</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div class="relative overflow-hidden">
+        <img src="https://picsum.photos/600/400?random=6" alt="Chair" class="w-full h-80 object-cover transition duration-500 hover:scale-105">
+        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-10%</span>
+      </div>
+      <div class="p-5">
+        <p class="text-gray-500 text-sm">Living Room</p>
+        <h3 class="font-semibold text-lg">Recliner Chair</h3>
+        <div class="mt-2 flex items-center gap-2">
+          <span class="text-xl font-bold text-gray-900">₹18,000</span>
+          <span class="text-sm line-through text-gray-500">₹20,000</span>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Button -->
+  <div class="text-center mt-10">
+    <a href="#"
+       class="inline-block px-6 py-3 border-2 font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition">
+       View All Products
+    </a>
+  </div>
+</section>
+
+<!-- Stay Updated with Our Latest Collections -->
+ <section class="bg-[#0a0a1a] text-center py-16 px-6">
+  <div class="max-w-2xl mx-auto">
+    <!-- Heading -->
+    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+      Stay Updated with Our Latest Collections
+    </h2>
+
+    <!-- Subtext -->
+    <p class="text-gray-300 mb-8">
+      Get exclusive access to new arrivals, special offers, and interior design tips delivered directly to your inbox.
+    </p>
+
+    <!-- Form -->
+    <form class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div class="relative w-full sm:w-96">
+        <input type="email" placeholder="Enter your email address"
+               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-indigo-500">
+          📧
+        </span>
+      </div>
+      <button type="submit"
+              class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700 transition">
+        Subscribe
+      </button>
+    </form>
+
+    <!-- Note -->
+    <p class="text-sm text-gray-400 mt-4">
+      No spam, unsubscribe at any time. We respect your privacy.
+    </p>
+  </div>
+</section>
+
+
+<!-- Get in Touch -->
+ <section class="max-w-7xl mx-auto px-4 py-12 bg-white text-gray-800">
+    <!-- Heading -->
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-bold">Get in Touch</h2>
+      <p class="mt-2 text-gray-600">Have questions about our furniture? Need design consultation? We're here to help you create your perfect living space.</p>
+    </div>
+
+    <!-- Grid Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <!-- Left Contact Info -->
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-lg font-semibold">Contact Information</h3>
+        </div>
+
+        <div class="space-y-4">
+          <div class="flex items-start space-x-3">
+            <span class="text-indigo-600 text-xl">📍</span>
+            <div>
+              <h4 class="font-medium">Address</h4>
+              <p class="text-gray-600">42 Design Avenue, Furniture District<br>Mumbai, Maharashtra 400001<br>India</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-3">
+            <span class="text-indigo-600 text-xl">📞</span>
+            <div>
+              <h4 class="font-medium">Phone</h4>
+              <p class="text-gray-600">+91 98765 43210</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-3">
+            <span class="text-indigo-600 text-xl">✉️</span>
+            <div>
+              <h4 class="font-medium">Email</h4>
+              <p class="text-gray-600">hello@furnicraft.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-3">
+            <span class="text-indigo-600 text-xl">⏰</span>
+            <div>
+              <h4 class="font-medium">Store Hours</h4>
+              <p class="text-gray-600">Monday - Saturday: 10:00 AM - 8:00 PM<br>Sunday: 11:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visit Our Showroom -->
+        <div class="bg-gray-50 p-5 rounded-xl border">
+          <h4 class="font-semibold mb-2">Visit Our Showroom</h4>
+          <p class="text-gray-600 mb-4">Experience our furniture collections in person. Our design consultants are available to help you choose the perfect pieces for your home.</p>
+          <button class="w-full hover:text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Get Directions</button>
+        </div>
+      </div>
+
+      <!-- Right Form -->
+      <div class="lg:col-span-2 bg-gray-50 p-8 rounded-xl border">
+        <h3 class="text-lg font-semibold mb-6">Send us a Message</h3>
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium mb-2">Name *</label>
+              <input type="text" placeholder="Your full name" class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Email *</label>
+              <input type="email" placeholder="your.email@example.com" class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium mb-2">Phone</label>
+              <input type="text" placeholder="+91 98765 43210" class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Subject</label>
+              <input type="text" placeholder="How can we help you?" class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Message *</label>
+            <textarea rows="4" placeholder="Tell us about your furniture needs, preferred style, budget, or any specific requirements..." class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-indigo-800 transition">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 border-t mt-12">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Brand -->
+        <div>
+          <h3 class="text-lg font-semibold">FurniCraft</h3>
+          <p class="mt-3 text-gray-600">
+            Transform your living space with our premium furniture collection. Quality craftsmanship meets modern design.
+          </p>
+          <div class="flex space-x-4 mt-4 text-gray-500">
+            <a href="#" class="hover:text-indigo-600">🌐</a>
+            <a href="#" class="hover:text-indigo-600">🐦</a>
+            <a href="#" class="hover:text-indigo-600">📸</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold">Quick Links</h3>
+          <ul class="mt-3 space-y-2">
+            <li><a href="#" class="hover:text-indigo-600">Living Room</a></li>
+            <li><a href="#" class="hover:text-indigo-600">Bedroom</a></li>
+            <li><a href="#" class="hover:text-indigo-600">Dining Room</a></li>
+            <li><a href="#" class="hover:text-indigo-600">Office</a></li>
+            <li><a href="#" class="hover:text-indigo-600">Storage</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Service -->
+        <div>
+          <h3 class="text-lg font-semibold">Customer Service</h3>
+          <ul class="mt-3 space-y-2">
+            <li><a href="#" class="hover:text-indigo-600">Contact Us</a></li>
+            <li><a href="#" class="hover:text-indigo-600">Delivery Information</a></li>
+            <li><a href="#" class="hover:text-indigo-600">Returns & Exchanges</a></li>
+            <li><a href="#" class="hover:text-indigo-600">Warranty</a></li>
+            <li><a href="#" class="hover:text-indigo-600">Assembly Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-lg font-semibold">Contact Info</h3>
+          <ul class="mt-3 space-y-3 text-gray-600">
+            <li class="flex items-start space-x-3">
+              <span class="text-indigo-600">📍</span>
+              <span>42 Design Avenue<br>Mumbai, Maharashtra 400001</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <span class="text-indigo-600">📞</span>
+              <span>+91 98765 43210</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <span class="text-indigo-600">✉️</span>
+              <span>hello@furnicraft.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+        <p>© 2025 FurniCraft. All rights reserved.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="hover:text-indigo-600">Privacy Policy</a>
+          <a href="#" class="hover:text-indigo-600">Terms of Service</a>
+          <a href="#" class="hover:text-indigo-600">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script src="./src/index.js"></script>
+</body>
+</html>
