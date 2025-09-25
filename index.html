@@ -81,7 +81,7 @@ class="rounded-2xl shadow-lg w-full h-[550px] object-cover">
     </p>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    <div class="relative rounded-xl overflow-hidden shadow-md transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+    <div class="relative rounded-xl overflow-hidden shadow-md transform transition duration-300 hover:-translate-y-2 hover:shadow-xl z-40">
       <img src="./images/4d3cd7e2a9dd88da3c549a46de8ace65.jpg"
         class="w-full h-60 object-cover transition duration-300 hover:brightness-110" alt="Living Room">
       <div class="absolute bottom-4 left-4 text-white">
@@ -124,90 +124,261 @@ class="rounded-2xl shadow-lg w-full h-[550px] object-cover">
     </p>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div class="relative overflow-hidden">
-        <img src="./images/4d3cd7e2a9dd88da3c549a46de8ace65.jpg" alt="Sofa" class="w-full h-80 object-cover transition duration-500 hover:scale-105">
-        <span class="absolute top-3 left-3 bg-indigo-700 text-white text-xs font-semibold px-2 py-1 rounded-lg">New</span>
-        <span class="absolute top-3 left-16 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-18%</span>
+<!-- Product Card 1 -->
+<div
+  class="product-card bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl cursor-pointer max-w-sm"
+  data-title="Modern 3-Seater Sofa"
+  data-category="Living Room"
+  data-price="₹45,000"
+  data-oldprice="₹55,000"
+  data-description="Comfortable modern 3-seater sofa with premium fabric."
+  data-image="./images/4d3cd7e2a9dd88da3c549a46de8ace65.jpg"
+>
+  <div class="relative overflow-hidden">
+    <img
+      src="./images/4d3cd7e2a9dd88da3c549a46de8ace65.jpg"
+      alt="Sofa"
+      class="w-full h-80 object-cover transition duration-500 hover:scale-105"
+    />
+    <span class="absolute top-3 left-3 bg-indigo-700 text-white text-xs font-semibold px-2 py-1 rounded-lg">
+      New
+    </span>
+    <span class="absolute top-3 left-16 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">
+      -18%
+    </span>
+  </div>
+  <div class="p-5">
+    <p class="text-gray-500 text-sm">Living Room</p>
+    <h3 class="font-semibold text-lg">Modern 3-Seater Sofa</h3>
+    <div class="mt-2 flex items-center gap-2">
+      <span class="text-xl font-bold text-gray-900">₹45,000</span>
+      <span class="text-sm line-through text-gray-500">₹55,000</span>
+    </div>
+  </div>
+</div>
+<!-- Product Card 1 -->
+
+<!-- Product Card 2 -->
+<div
+  class="product-card bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl cursor-pointer max-w-sm"
+  data-title="Oak Dining Table Set"
+  data-category="Dining Room"
+  data-price="₹38,000"
+  data-oldprice="₹45,000"
+  data-description="Elegant oak dining table set with durable finish, perfect for family meals."
+  data-image="./images/products_steve_silver_color_westby-1172854226_wb380t-b1.jpg"
+>
+  <div class="relative overflow-hidden">
+    <img
+      src="./images/products_steve_silver_color_westby-1172854226_wb380t-b1.jpg"
+      alt="Dining Table"
+      class="w-full h-80 object-cover transition duration-500 hover:scale-105"
+    />
+    <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-15%</span>
+  </div>
+  <div class="p-5">
+    <p class="text-gray-500 text-sm">Dining Room</p>
+    <h3 class="font-semibold text-lg">Oak Dining Table Set</h3>
+    <div class="mt-2 flex items-center gap-2">
+      <span class="text-xl font-bold text-gray-900">₹38,000</span>
+      <span class="text-sm line-through text-gray-500">₹45,000</span>
+    </div>
+  </div>
+</div>
+<!-- Product Card 2 -->
+
+<!-- Product Card 3 -->
+<div
+  class="product-card bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl cursor-pointer max-w-sm"
+  data-title="Platform Bed Frame"
+  data-category="Bedroom"
+  data-price="₹28,000"
+  data-oldprice="₹35,000"
+  data-description="Minimalist platform bed frame designed for durability and comfort."
+  data-image="./images/il_fullxfull.4336336497_32f7.jpg"
+>
+  <div class="relative overflow-hidden">
+    <img
+      src="./images/il_fullxfull.4336336497_32f7.jpg"
+      alt="Bed Frame"
+      class="w-full h-80 object-cover transition duration-500 hover:scale-105"
+    />
+    <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-20%</span>
+  </div>
+  <div class="p-5">
+    <p class="text-gray-500 text-sm">Bedroom</p>
+    <h3 class="font-semibold text-lg">Platform Bed Frame</h3>
+    <div class="mt-2 flex items-center gap-2">
+      <span class="text-xl font-bold text-gray-900">₹28,000</span>
+      <span class="text-sm line-through text-gray-500">₹35,000</span>
+    </div>
+  </div>
+</div>
+<!-- Product Card 3 -->
+
+<!-- Product Card 4 -->
+<div
+  class="product-card bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl cursor-pointer max-w-sm"
+  data-title="Ergonomic Office Desk"
+  data-category="Office"
+  data-price="₹22,000"
+  data-oldprice="₹25,000"
+  data-description="Ergonomic office desk with modern design and durable build quality."
+  data-image="./images/Ergonomic-Desks-1024x636.jpg"
+>
+  <div class="relative overflow-hidden">
+    <img
+      src="./images/Ergonomic-Desks-1024x636.jpg"
+      alt="Office Desk"
+      class="w-full h-80 object-cover transition duration-500 hover:scale-105"
+    />
+    <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-12%</span>
+  </div>
+  <div class="p-5">
+    <p class="text-gray-500 text-sm">Office</p>
+    <h3 class="font-semibold text-lg">Ergonomic Office Desk</h3>
+    <div class="mt-2 flex items-center gap-2">
+      <span class="text-xl font-bold text-gray-900">₹22,000</span>
+      <span class="text-sm line-through text-gray-500">₹25,000</span>
+    </div>
+  </div>
+</div>
+<!-- Product Card 4 -->
+
+<!-- Product Card 5 -->
+<div
+  class="product-card bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl cursor-pointer max-w-sm"
+  data-title="Wooden Bookshelf"
+  data-category="Study"
+  data-price="₹15,000"
+  data-oldprice=""
+  data-description="Stylish wooden bookshelf for your study or living room."
+  data-image="./images/FXXZSCCHBNXUMPH.LARGE_-e1583764221638.jpg"
+>
+  <div class="relative overflow-hidden">
+    <img
+      src="./images/FXXZSCCHBNXUMPH.LARGE_-e1583764221638.jpg"
+      alt="Bookshelf"
+      class="w-full h-80 object-cover transition duration-500 hover:scale-105"
+    />
+    <span class="absolute top-3 left-3 bg-indigo-700 text-white text-xs font-semibold px-2 py-1 rounded-lg">New</span>
+  </div>
+  <div class="p-5">
+    <p class="text-gray-500 text-sm">Study</p>
+    <h3 class="font-semibold text-lg">Wooden Bookshelf</h3>
+    <div class="mt-2 flex items-center gap-2">
+      <span class="text-xl font-bold text-gray-900">₹15,000</span>
+    </div>
+  </div>
+</div>
+<!-- Product Card 5 -->
+
+<!-- Product Card 6 -->
+<div
+  class="product-card bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl cursor-pointer max-w-sm"
+  data-title="Recliner Chair"
+  data-category="Living Room"
+  data-price="₹18,000"
+  data-oldprice="₹20,000"
+  data-description="Comfortable recliner chair with premium cushioning for relaxation."
+  data-image="./images/71a4p3Kup6L._AC_SL1500_.jpg"
+>
+  <div class="relative overflow-hidden">
+    <img
+      src="./images/71a4p3Kup6L._AC_SL1500_.jpg"
+      alt="Chair"
+      class="w-full h-80 object-cover transition duration-500 hover:scale-105"
+    />
+    <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-10%</span>
+  </div>
+  <div class="p-5">
+    <p class="text-gray-500 text-sm">Living Room</p>
+    <h3 class="font-semibold text-lg">Recliner Chair</h3>
+    <div class="mt-2 flex items-center gap-2">
+      <span class="text-xl font-bold text-gray-900">₹18,000</span>
+      <span class="text-sm line-through text-gray-500">₹20,000</span>
+    </div>
+  </div>
+</div>
+<!-- Product Card 6 -->
+</div>
+
+<!-- testing code -->
+<!-- Modal -->
+<div
+  id="productModal"
+  class="fixed inset-0 backdrop-blur-sm bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+>
+  <div
+    class="modal-panel bg-white max-w-5xl w-full mx-4 rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row relative transform transition-transform duration-300 scale-95"
+  >
+    <!-- Close Button -->
+    <button
+      id="closeModal"
+      class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl"
+    >
+      &times;
+    </button>
+
+    <!-- Left: Image -->
+    <div class="md:w-1/2 bg-gray-100">
+      <img
+        id="modalImage"
+        src=""
+        alt="Product Image"
+        class="h-full w-full object-cover"
+      />
+    </div>
+
+    <!-- Right: Content -->
+    <div class="md:w-1/2 p-6 flex flex-col overflow-y-auto max-h-[90vh]">
+      <!-- Section: Category -->
+      <h2 class="text-sm font-medium text-gray-500" id="modalCategory">Storage</h2>
+
+      <!-- Section: Title -->
+      <h1 class="text-2xl font-bold text-gray-900 mt-1" id="modalTitle">Industrial Bookshelf</h1>
+
+      <!-- Section: Price -->
+      <div class="flex items-center gap-3 mt-3">
+        <span class="text-2xl font-bold text-gray-900" id="modalPrice">₹22,000</span>
+        <span class="text-lg line-through text-gray-500" id="modalOldPrice">₹28,000</span>
+        <span class="bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg" id="modalDiscount">
+          -21% OFF
+        </span>
       </div>
-      <div class="p-5">
-        <p class="text-gray-500 text-sm">Living Room</p>
-        <h3 class="font-semibold text-lg">Modern 3-Seater Sofa</h3>
-        <div class="mt-2 flex items-center gap-2">
-          <span class="text-xl font-bold text-gray-900">₹45,000</span>
-          <span class="text-sm line-through text-gray-500">₹55,000</span>
-        </div>
+
+      <!-- Section: Description -->
+      <div class="mt-6">
+        <h3 class="font-semibold text-gray-900">Description</h3>
+        <p class="text-gray-600 mt-2 text-sm leading-relaxed" id="modalDescription">
+          Industrial-style bookshelf with metal frame and wood shelves. Perfect for displaying books,
+          decor, and personal items with a modern industrial aesthetic.
+        </p>
+      </div>
+
+      <!-- Section: Specifications -->
+      <div class="mt-6">
+        <h3 class="font-semibold text-gray-900">Specifications</h3>
+        <ul class="list-disc list-inside text-gray-600 mt-2 text-sm space-y-1" id="modalSpecs">
+          <li>5-tier shelving unit</li>
+          <li>Metal frame with wood shelves</li>
+          <li>Dimensions: 31" W x 13" D x 71" H</li>
+          <li>Anti-tip hardware included</li>
+          <li>Easy assembly</li>
+        </ul>
+      </div>
+
+      <!-- Section: Service Information -->
+      <div class="mt-6 p-4 bg-gray-50 rounded-lg border text-sm text-gray-600 space-y-1" id="modalService">
+        <p>• Free delivery on orders above ₹25,000</p>
+        <p>• EMI options available</p>
+        <p>• 30-day return policy</p>
+        <p>• Professional assembly service available</p>
       </div>
     </div>
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div class="relative overflow-hidden">
-        <img src="./images/products_steve_silver_color_westby-1172854226_wb380t-b1.jpg" alt="Dining Table" class="w-full h-80 object-cover transition duration-500 hover:scale-105">
-        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-15%</span>
-      </div>
-      <div class="p-5">
-        <p class="text-gray-500 text-sm">Dining Room</p>
-        <h3 class="font-semibold text-lg">Oak Dining Table Set</h3>
-        <div class="mt-2 flex items-center gap-2">
-          <span class="text-xl font-bold text-gray-900">₹38,000</span>
-          <span class="text-sm line-through text-gray-500">₹45,000</span>
-        </div>
-      </div>
-    </div>
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div class="relative overflow-hidden">
-        <img src="./images/il_fullxfull.4336336497_32f7.jpg" alt="Bed Frame" class="w-full h-80 object-cover transition duration-500 hover:scale-105">
-        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-20%</span>
-      </div>
-      <div class="p-5">
-        <p class="text-gray-500 text-sm">Bedroom</p>
-        <h3 class="font-semibold text-lg">Platform Bed Frame</h3>
-        <div class="mt-2 flex items-center gap-2">
-          <span class="text-xl font-bold text-gray-900">₹28,000</span>
-          <span class="text-sm line-through text-gray-500">₹35,000</span>
-        </div>
-      </div>
-    </div>
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div class="relative overflow-hidden">
-        <img src="./images/Ergonomic-Desks-1024x636.jpg" alt="Office Desk" class="w-full h-80 object-cover transition duration-500 hover:scale-105">
-        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-12%</span>
-      </div>
-      <div class="p-5">
-        <p class="text-gray-500 text-sm">Office</p>
-        <h3 class="font-semibold text-lg">Ergonomic Office Desk</h3>
-        <div class="mt-2 flex items-center gap-2">
-          <span class="text-xl font-bold text-gray-900">₹22,000</span>
-          <span class="text-sm line-through text-gray-500">₹25,000</span>
-        </div>
-      </div>
-    </div>
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div class="relative overflow-hidden">
-        <img src="./images/FXXZSCCHBNXUMPH.LARGE_-e1583764221638.jpg" alt="Bookshelf" class="w-full h-80 object-cover transition duration-500 hover:scale-105">
-        <span class="absolute top-3 left-3 bg-indigo-700 text-white text-xs font-semibold px-2 py-1 rounded-lg">New</span>
-      </div>
-      <div class="p-5">
-        <p class="text-gray-500 text-sm">Study</p>
-        <h3 class="font-semibold text-lg">Wooden Bookshelf</h3>
-        <div class="mt-2 flex items-center gap-2">
-          <span class="text-xl font-bold text-gray-900">₹15,000</span>
-        </div>
-      </div>
-    </div>
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div class="relative overflow-hidden">
-        <img src="./images/71a4p3Kup6L._AC_SL1500_.jpg" alt="Chair" class="w-full h-80 object-cover transition duration-500 hover:scale-105">
-        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-lg">-10%</span>
-      </div>
-      <div class="p-5">
-        <p class="text-gray-500 text-sm">Living Room</p>
-        <h3 class="font-semibold text-lg">Recliner Chair</h3>
-        <div class="mt-2 flex items-center gap-2">
-          <span class="text-xl font-bold text-gray-900">₹18,000</span>
-          <span class="text-sm line-through text-gray-500">₹20,000</span>
-        </div>
-      </div>
-    </div>
+  </div>
+</div>
+<!--testing  -->
 </div>
   <div class="text-center mt-10">
     <a href="#"
@@ -215,7 +386,7 @@ class="rounded-2xl shadow-lg w-full h-[550px] object-cover">
        View All Products
     </a>
   </div>
-</sectio>
+</section>
 <section id="office" class="bg-[#0a0a1a] text-center py-16 px-6">
 
   <div class="max-w-2xl mx-auto">
@@ -387,6 +558,6 @@ class="rounded-2xl shadow-lg w-full h-[550px] object-cover">
       </div>
     </div>
   </footer>
-  <script src="index.js"></script>
+  <script src="./src/index.js"></script>
 </body>
 </html>
